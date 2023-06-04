@@ -1,0 +1,179 @@
+.navbar.headerBar {
+    padding: 0;
+    height: 11%;
+}
+
+body {
+    position: relative;
+}
+
+.carousel.slide>.carousel-indicators [data-bs-target="#aboutMe"] {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.headerBar::after {
+    content: "";
+    height: 100%;
+    width: 63%;
+    background-color: #19e788;
+    transform: skewX(30deg);
+    position: relative;
+    left: 3%;
+}
+
+.home_car1,
+.home_car2 {
+    width: 100%;
+    height: 538px;
+    padding: 7% 20%;
+    background-image: linear-gradient(to bottom right, #076724, #15dba4);
+}
+
+.my_img.img-thumbnail {
+    background-size: contain;
+    height: 90%;
+    width: 60vw;
+    border-radius: 50%;
+}
+.page_body {
+    position: absolute;
+    top: 11vh;
+}
+
+.image_container {
+    margin-right: 2rem;
+}
+
+.container.skills {
+    padding: 5% 15%;
+}
+
+.progress {
+    width: 100%;
+}
+
+.projects.container-fluid {
+    padding: 6%;
+    background-image: linear-gradient(to bottom right, #076724, #15dba4);
+}
+
+.shadow-lg.rounded.w-100 {
+    border-radius: 20px !important;
+}
+
+.container.qual .line {
+    height: 4px;
+    border: 2px solid var(--bs-secondary);
+}
+
+/* .line::before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-color: var(--bs-success);
+    position: absolute;
+    border-radius: 50%;
+    bottom: 0.5%;
+} */
+
+.height_qual {
+    height: 202px;
+    width: 35%;
+}
+
+/* .qual_box::after {
+    transform: rotate(45deg);
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 2.3%;
+    background-color: var(--bs-success);
+    left: 8.4%;
+}
+
+.qual_box2::after {
+    transform: rotate(45deg);
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 2.3%;
+    background-color: var(--bs-success);
+    left: 36.5%;
+}
+
+.qual_box3::after {
+    transform: rotate(45deg);
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    bottom: 2.3%;
+    background-color: var(--bs-success);
+    left: 64.4%;
+} */
+img[alt="avatar_logo"] {
+    width: 66px;
+}
+
+footer>div {
+    height: 4rem;
+    align-items: center;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 575px) {
+    img[alt="avatar_logo"] {
+        width: 40px;
+    }
+    .navbar>.container-fluid {
+        justify-content: space-between !important;
+        background-color: var(--bs-success);
+    }
+    .home_car1,
+    .home_car2 {
+        height: 400px;
+        padding: 12% 8% 0 8%;
+    }
+    .navbar.headerBar {
+        height: 7%;
+    }
+    .height_qual>div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    footer>div {
+        height: 6rem;
+    }
+}
+
+@media screen and (max-width: 404px) {
+    .flip-card-front > img {
+        width: 85% !important;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .headerBar::after {
+        display: none;
+    }
+    footer>div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .qual > div.row {
+        flex-direction: column;
+    } 
+}
+
+@media screen and (min-width: 576px) and (max-width: 1300px) {
+    .projects > div {
+        flex-direction: column;
+        align-content: center;
+    }
+}
